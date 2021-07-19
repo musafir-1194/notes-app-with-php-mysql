@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px dashed saddlebrown;
+    padding: 0.7em 0.9em;
+    height: auto;
+}
+
+.btn-primary,
+.close {
+    border: none;
+}
+
+/* Heading */
+.heading h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Form */
+.note_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;    
+}
+
+.btn-primary {
+    background-color: rgb(3, 93, 172);
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Notes Result */
+.notes_result {
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+.notes_result .note_area {
+    border: 1px solid rgb(189, 183, 183);
+    padding: 5px 10px;
+    background-color: rgb(236, 213, 4);
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 100px;
+}
+
+.note_area .note__title  {
+    margin-bottom: 10px;
+}
+
+.note_area .note__title a {
+    font-size: 22px;
+    color: #000;
+}
+
+.note_area .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    padding: 0.6em 0.9em;
+    font-size: 14px;
+    color: red;
+    cursor: pointer;
+}
+
+.note_area small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
